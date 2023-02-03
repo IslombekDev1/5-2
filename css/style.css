@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(45deg, #8b51ff, #7a37ff);
+}
+#customTag{
+  width: 20%;
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  margin: 28vh auto;
+  padding: 2rem 0;
+  box-shadow: 0 0 38px 5px blue;
+  background-color: white;
+  
+}
+
+.animation{
+   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+   animation-name: a;
+   animation-duration: 5s;
+   animation-timing-function: ease-in-out;
+   animation-direction: alternate;
+   animation-fill-mode: backwards;
+}
+
+label{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 18px;
+}
+
+input{
+  font-size: 16px;
+  padding: 5px;
+}
+
+.answerStyle1,
+.answerStyle2{
+  transition: .5s ease-in-out;
+  color: white;
+  text-align: center;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: green;
+}
+
+.answerStyle2{
+  background-color: red;
+}
+
+.btn{
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+  color: white;
+  border:none;
+  border-radius: 6px;
+  background-color: #7f3fff;
+  cursor: pointer;
+}
+
+.run{
+  transform: translateX(110px);
+ 
+}
+
+@keyframes a {
+  0%{
+    background-color: transparent;
+  }
+  10%{
+    background-color: red;
+  }
+  20%{
+    background-color: yellow;
+  }
+  30%{
+    background-color: green;
+  }
+  40%{
+    background-color: black;
+  }
+  50%{
+    background-color: transparent;
+  }
+  60%{
+    background-color: currentColor;
+  }
+  70%{
+    background-color: brown;
+  }
+  80%{
+    background-color: burlywood;
+  }
+  90%{
+    background-color: dodgerblue;
+  }
+  100%{
+    background-color: tomato;
+  }
+}
